@@ -9,11 +9,11 @@ function convertToPigLatin(word) {
   if (typeof word === "string" && word.length > 1) {
     const firstLetter = word.charAt(0);
 
-    //Returns the character at the specified index. Index 0 --> first letter of the word
+    //.charAt returns the character at the specified index. Index 0 --> first letter of the word
 
     const restOfWord = word.slice(1);
 
-    //Removes everything before specified index
+    // .slice(1) removes everything before specified index
 
     return restOfWord + firstLetter + "ay";
   } else {
@@ -28,6 +28,7 @@ function convertCommandLineArgumentsToPigLatin(args) {
     pigLatinArray.push(pigLatinWord);
   }
   const pigLatinSentence = pigLatinArray.join(" ");
+  
   //The .join(" ") method is used to concatenate the elements of an array into a single string, with each element separated by a specified separator. In this case, the separator is a space character " ", which means that each element will be separated by a space.
   
   console.log(pigLatinSentence);

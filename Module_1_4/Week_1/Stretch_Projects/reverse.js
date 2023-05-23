@@ -15,7 +15,10 @@ const reverse = function (commandLineArguments) {
       console.log(item);
     } else if (typeof item === "string") {
       var newString = "";
-      for (var i = item.length - 1; i >= 0; i--) { //to itterate the string from the end and then log it backwards adding one character by one
+      for (var i = item.length - 1; i >= 0; i--) { 
+        
+        //to itterate the string from the end and then log it backwards adding one character by one
+        
         newString += item[i];
       }
       console.log(newString);
