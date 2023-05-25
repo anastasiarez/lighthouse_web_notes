@@ -12,9 +12,9 @@ var planetMoons = {
 function cosmos(){
 
 for (var planet in planetMoons) { 
-  
+
   // var planet is everything in the first column of the object - keys
-  
+
   var numberOfMoons = planetMoons[planet];
   console.log("Planet: " + planet + ", # of Moons: "+ numberOfMoons);
 }}
@@ -30,3 +30,5 @@ for (var planet in planetMoons) {
   if (planetMoons.hasOwnProperty(planet)) {
   }
 }
+
+
